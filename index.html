@@ -15,6 +15,7 @@
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
+                <li><a href="#planner">Agenda</a></li>
                 <li><a href="#duvidas">Dúvidas</a></li>
                 <li><a href="#contato">Contate-nos</a></li>
             </ul>
@@ -34,44 +35,65 @@
             melhor.</p>
     </section>
 
+ <!-- Seção de Planejador de Hábitos -->
+ <section id="planner" class="section">
+  <h2>Agenda e Planejador de Hábitos</h2>
+  <p>Veja sugestões para uma semana mais saudável e equilibrada!</p>
+
+  <!-- Controles para os dias da semana -->
+  <div class="days">
+      <button onclick="showActivities('segunda')">Segunda-feira</button>
+      <button onclick="showActivities('terca')">Terça-feira</button>
+      <button onclick="showActivities('quarta')">Quarta-feira</button>
+      <button onclick="showActivities('quinta')">Quinta-feira</button>
+      <button onclick="showActivities('sexta')">Sexta-feira</button>
+      <button onclick="showActivities('sabado')">Sábado</button>
+      <button onclick="showActivities('domingo')">Domingo</button>
+  </div>
+
+  <!-- Área para mostrar atividades diárias -->
+  <div id="activities" class="activities">
+      <h3>Atividades do Dia</h3>
+      <p>Escolha um dia para ver as atividades sugeridas.</p>
+  </div>
+</section>
+
     <!-- Seção Dúvidas -->
     <section id="duvidas" class="section">
         <img src="images/faq_health.png">
         <div>
             <h2>Ficou alguma dúvida?</h2>
             <div class="duvida">
-              <h3>Quais serviços são oferecidos pela clínica da PetLife?</h3>
+              <h3>Quais são os primeiros passos para adotar uma rotina mais saudável?</h3>
               <p class="paragrafo">
-                A clínica da PetLife oferece uma ampla gama de serviços, incluindo consultas de rotina, vacinação,
-                cirurgias,
-                tratamento de doenças, cuidados odontológicos, atendimento de emergência 24 horas, programas de prevenção de
-                pulgas, carrapatos e vermes, entre outros. Nosso objetivo é fornecer cuidados abrangentes e personalizados
-                para garantir a saúde e o bem-estar do seu pet.
+                O primeiro passo é definir pequenos objetivos diários, como melhorar a alimentação e incluir exercícios
+                físicos na rotina. Escolher uma atividade que você goste, como caminhada, ioga ou musculação, também
+                facilita a constância. Além disso, não esqueça de priorizar o sono e o descanso!
               </p>
             </div>
             <div class="duvida">
-              <h3>Quais espécies de animais a clínica veterinária atende?</h3>
+              <h3>Qual a importância da hidratação para a saúde do corpo?</h3>
               <p class="paragrafo">
-                A clínica veterinária da PetLife atende animais de estimação de todas as espécies, incluindo cães, gatos,
-                pássaros, roedores e répteis. Nossos profissionais possuem conhecimento e experiência para cuidar de
-                diferentes tipos de animais, oferecendo um atendimento especializado e dedicado a cada um deles.
+                A hidratação é essencial para manter o corpo funcionando adequadamente. A água auxilia na digestão,
+                na circulação e na absorção de nutrientes, além de ajudar a manter a pele saudável e a regular a
+                temperatura corporal.Beber água ao longo do dia é uma das práticas mais simples para o
+                bem-estar.
               </p>
             </div>
             <div class="duvida">
-              <h3>A clínica da PetLife possui serviços de emergência?</h3>
+              <h3>Como melhorar a saúde mental no dia a dia?</h3>
               <p class="paragrafo">
-                Sim, a clínica veterinária da PetLife oferece serviços de emergência 24 horas. Se o seu animal de estimação
-                precisar de atendimento veterinário imediato fora do horário de expediente, nossa equipe está pronta para
-                ajudar, fornecendo cuidados urgentes e tratamento adequado para garantir o bem-estar do seu pet.
+                Práticas como meditação, respiração consciente e atividades físicas podem ajudar a aliviar
+                o estresse e promover o bem-estar mental. Tentar manter uma rotina equilibrada, evitando a
+                sobrecarga e buscando apoio emocional quando necessário, também são passos importantes.
               </p>
             </div>
             <div class="duvida">
-              <h3>A clínica oferece serviços de banho e tosa?</h3>
+              <h3>Como adaptar minha alimentação para ter mais energia e disposição?</h3>
               <p class="paragrafo">
-                Sim, a clínica veterinária da PetLife oferece serviços profissionais de banho e tosa. Nossa equipe de
-                profissionais experientes garante que seu pet receba cuidados adequados, usando produtos de alta qualidade e
-                técnicas seguras. O banho e tosa ajudam a manter a higiene, a saúde da pele e pelagem do seu pet, além de
-                proporcionar uma experiência relaxante e agradável para eles.
+                Uma alimentação rica em frutas, vegetais, proteínas e carboidratos integrais ajuda a manter a energia
+                ao longo do dia. Reduzir o consumo de alimentos ultraprocessados e incluir fontes de fibras e
+                vitaminas contribui para uma disposição melhor e um corpo mais nutrido.
               </p>
             </div>
           </div>

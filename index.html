@@ -10,12 +10,13 @@
     <!-- Barra de Navegação -->
     <header>
         <a href="index.html">
-            <img src="images/logo-health-white.png" alt="healthLife">
+            <img src="images/logo-white-healt.png" alt="healthLife">
         </a>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#planner">Agenda</a></li>
+                <li><a href="#chamada">Chamada</a></li>
                 <li><a href="#duvidas">Dúvidas</a></li>
                 <li><a href="#contato">Contate-nos</a></li>
             </ul>
@@ -56,6 +57,66 @@
       <h3>Atividades do Dia</h3>
       <p>Escolha um dia para ver as atividades sugeridas.</p>
   </div>
+</section>
+
+<!-- Seção de Testes e Avaliações -->
+<section id="chamada" class="section">
+  <img src="images/chamada_health.png" alt="Imagem relacionada à saúde e cuidados pessoais">
+  <h2>Testes e Avaliações de Bem-Estar</h2>
+  <p>Responda ao questionário abaixo para avaliar sua rotina de bem-estar e saúde.</p>
+
+  <!-- Formulário de Avaliação -->
+  <form id="wellnessForm">
+      <!-- Pergunta 1 -->
+      <div class="question">
+          <label>Com que frequência você pratica atividades físicas?</label>
+          <select id="physicalActivity">
+              <option value="3">Diariamente</option>
+              <option value="2">Algumas vezes por semana</option>
+              <option value="1">Raramente</option>
+              <option value="0">Nunca</option>
+          </select>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <div class="question">
+          <label>Com que frequência você inclui frutas e vegetais na sua alimentação?</label>
+          <select id="healthyEating">
+              <option value="3">Todos os dias</option>
+              <option value="2">Algumas vezes por semana</option>
+              <option value="1">Raramente</option>
+              <option value="0">Nunca</option>
+          </select>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <div class="question">
+          <label>Como você descreveria seu nível de estresse atual?</label>
+          <select id="stressLevel">
+              <option value="0">Muito alto</option>
+              <option value="1">Moderado</option>
+              <option value="2">Baixo</option>
+              <option value="3">Muito baixo</option>
+          </select>
+      </div>
+
+      <!-- Pergunta 4 -->
+      <div class="question">
+          <label>Você tem uma boa qualidade de sono?</label>
+          <select id="sleepQuality">
+              <option value="3">Sim, sempre</option>
+              <option value="2">Na maioria das noites</option>
+              <option value="1">Às vezes</option>
+              <option value="0">Raramente</option>
+          </select>
+      </div>
+
+      <!-- Botão de Enviar -->
+      <button type="button" onclick="calculateWellness()">Ver Resultado</button>
+  </form>
+
+  <!-- Resultado da Avaliação -->
+  <div id="result" class="result"></div>
 </section>
 
     <!-- Seção Dúvidas -->

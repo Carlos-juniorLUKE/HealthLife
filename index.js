@@ -61,3 +61,27 @@ function showActivities(day) {
     activitiesDiv.innerHTML = `<h3>Atividades para ${day.charAt(0).toUpperCase() + day.slice(1)}-feira</h3>`;
     activitiesDiv.innerHTML += `<ul>${activities.map(activity => `<li>${activity}</li>`).join('')}</ul>`;
 }
+
+function calculateWellness() {
+    // Pega as respostas do formulário
+    const physicalActivity = parseInt(document.getElementById("physicalActivity").value);
+    const healthyEating = parseInt(document.getElementById("healthyEating").value);
+    const stressLevel = parseInt(document.getElementById("stressLevel").value);
+    const sleepQuality = parseInt(document.getElementById("sleepQuality").value);
+
+    // Calcula a pontuação total
+    const score = physicalActivity + healthyEating + stressLevel + sleepQuality;
+    
+    // Define o resultado com base na pontuação
+    let resultText = "";
+    if (score >= 10) {
+        resultText = "Parabéns! Sua rotina de bem-estar está excelente! Continue assim para manter uma boa saúde física e mental.";
+    } else if (score >= 6) {
+        resultText = "Você está no caminho certo, mas há algumas áreas que podem ser melhoradas. Tente incluir mais atividades saudáveis em sua rotina.";
+    } else {
+        resultText = "É importante dedicar mais atenção ao seu bem-estar. Pequenas mudanças diárias podem fazer uma grande diferença. Que tal começar com mais exercícios e uma alimentação equilibrada?";
+    }
+
+    // Exibe o resultado
+    document.getElementById("result").innerHTML = `<h3>Resultado:</h3><p>${resultText}</p>`;
+}
